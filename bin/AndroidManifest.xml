@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qomatech.datashowromqodri"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        >
+        <activity
+            android:name="com.qomatech.datashowromqodri.MainActivity"
+            android:label="@string/app_name" 
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- SpesifikasiMobilActivity -->
+         <activity
+            android:name="com.qomatech.datashowromqodri.SpesifikasiMobilActivity"
+            android:label="@string/add_SpesifikasiMobil" 
+            android:parentActivityName="com.qomatech.datashowromqodri.MainActivity"
+            >
+        </activity>
+        
+         <!-- HargaMobilActivity -->
+         <activity
+            android:name="com.qomatech.datashowromqodri.HargaMobilActivity"
+            android:label="@string/add_HargaMobil" 
+            android:parentActivityName="com.qomatech.datashowromqodri.MainActivity"
+            >
+        </activity>
+        
+         <!-- DaftarHargaMobilActivity -->
+         <activity
+            android:name="com.qomatech.datashowromqodri.DaftarHargaMobilActivity"
+            android:label="@string/add_DaftarHargaMobil" 
+            android:parentActivityName="com.qomatech.datashowromqodri.MainActivity"
+            >
+        </activity>
+    </application>
+
+</manifest>

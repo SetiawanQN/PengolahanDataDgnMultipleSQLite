@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical" 
+    >
+
+    <EditText
+        android:id="@+id/SpesifikasiMobil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="@string/spesifikasimobil_add"
+        android:inputType="textMultiLine"
+        
+        android:textSize="11sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/delAllBtn"
+        android:layout_marginTop="10dp"
+        android:text="@string/spesifikasimobil_listdata"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textSize="13sp"/>
+
+    <ListView
+        android:id="@+id/listSpesifikasiMobil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="3dp" 
+        android:textSize="13sp">
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/spesifikasimobil_awal"
+        
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/SpesifikasiMobilUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/noUpdate"
+        android:layout_toRightOf="@+id/noUpdate"
+        android:ems="10"
+        android:hint="@string/spesifikasimobil_update"
+        android:inputType="textMultiLine"
+        android:textSize="11sp" />
+
+    <EditText
+        android:id="@+id/noUpdate"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:ems="10"
+        android:hint="Id."
+        android:inputType="numberDecimal"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/TextView1"
+        android:layout_below="@+id/SpesifikasiMobilUpdate"
+        android:text="@string/update"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/addSpesifikasiMobilBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/updateBtn"
+        android:layout_below="@+id/SpesifikasiMobil"
+        android:text="@string/add"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/addSpesifikasiMobilBtn"
+        android:text="@string/spesifikasimobil_tengah"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/updateBtn"
+        android:text="@string/spesifikasimobil_akhir"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/delBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SpesifikasiMobilUpdate"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/delete1"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/noDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_toLeftOf="@+id/delBtn"
+        android:ems="10"
+        android:hint="Id"
+        android:inputType="numberDecimal"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/delAllBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/delBtn"
+        android:layout_below="@+id/delBtn"
+        android:text="@string/delete2"
+        android:textSize="13sp" />
+
+</RelativeLayout>

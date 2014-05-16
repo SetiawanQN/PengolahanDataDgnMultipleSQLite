@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical" 
+    >
+
+    <EditText
+        android:id="@+id/HargaMobil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="@string/HargaMobil_add"
+        android:inputType="textMultiLine"
+        
+        android:textSize="11sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/delAllHargaMobilBtn"
+        android:layout_marginTop="10dp"
+        android:text="@string/HargaMobil_listdata"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textSize="13sp"/>
+
+    <ListView
+        android:id="@+id/listHargaMobil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="3dp" 
+        android:textSize="13sp">
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/HargaMobil_awal"
+        
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/HargaMobilUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/noHargaMobilUpdate"
+        android:layout_toRightOf="@+id/noHargaMobilUpdate"
+        android:ems="10"
+        android:hint="@string/HargaMobil_update"
+        android:inputType="textMultiLine"
+        android:textSize="11sp" />
+
+    <EditText
+        android:id="@+id/noHargaMobilUpdate"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:ems="10"
+        android:hint="Id."
+        android:inputType="numberDecimal"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/updateHargaMobilBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/TextView1"
+        android:layout_below="@+id/HargaMobilUpdate"
+        android:text="@string/update"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/addHargaMobilBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/updateHargaMobilBtn"
+        android:layout_below="@+id/HargaMobil"
+        android:text="@string/add"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/addHargaMobilBtn"
+        android:text="@string/HargaMobil_tengah"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/updateHargaMobilBtn"
+        android:text="@string/HargaMobil_akhir"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/delHargaMobilBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/HargaMobilUpdate"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/delete1"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/noHargaMobilDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_toLeftOf="@+id/delHargaMobilBtn"
+        android:ems="10"
+        android:hint="Id"
+        android:inputType="numberDecimal"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/delAllHargaMobilBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/delHargaMobilBtn"
+        android:layout_alignLeft="@+id/delHargaMobilBtn"
+        android:text="@string/delete2"
+        android:textSize="13sp" />
+
+</RelativeLayout>
